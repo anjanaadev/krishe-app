@@ -1,0 +1,220 @@
+
+.App {
+    display: flex;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    width: 20%;
+    height: 250vh; /* Full height of viewport */
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* position: fixed; */
+  }
+  
+  .logo {
+    margin-bottom: 20px;
+  }
+  .logo img {
+    max-width: 100%;
+    width:200px;
+    border-bottom: 2px solid black;
+  }
+  
+  .sidebar-content {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-content a {
+    padding: 10px;
+    margin-bottom: 10px; /* Increase the gap between links */
+    border-bottom: 1px solid #ccc; /* Add a border to each link */
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .sidebar-content a:hover {
+    background-color: #ddd; /* Change background color on hover */
+    color: #000; /* Change text color on hover */
+}
+  
+  .content {
+    flex: 1; /* Take remaining space */
+    padding: 40px 30px;
+    width: 80%;
+
+  }
+  
+  .content h2 {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .sensor-data, .plant-disease {
+    margin-bottom: 20px;
+  }
+
+  /* .company-logo {
+    width: 150px;
+  } */
+
+  .field-map-images {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    width: auto;
+    /* background-color: #f5f5f5; */
+    padding: 10px;
+  }
+  
+  .field-map-images img {
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+    border: 2px solid #ccc;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .sensor-data-container {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure items stay in a single line */
+  }
+
+.sensor-datas {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.sensor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 100px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sensor-card.red {
+    background-color: #e74c3c;
+}
+
+.sensor-card.green {
+    background-color: #2ecc71;
+}
+
+.sensor-card.orange {
+    background-color: #f39c12;
+}
+
+.sensor-card.blue {
+    background-color: #3498db;
+}
+
+.sensor-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sensor-value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.plant-disease-container {
+    padding: 20px;
+    /* background-color: #f5f5f5; */
+}
+
+.disease-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap between cards */
+    justify-content: space-around;
+}
+
+.disease-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    /* max-width: 500px; */
+    width: 100%;
+    overflow: hidden;
+}
+
+.disease-image {
+    max-width: 250px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.disease-info {
+    flex-grow: 1;
+}
+
+.disease-info h2 {
+    margin: 0;
+    /* font-size: 1.2em; */
+    color: #333;
+}
+
+.disease-info p {
+    color: #666;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.disease-Symptoms{
+    padding: 20px;
+    /* background-color: #f5f5f5; */
+}
+
+.sympotoms{
+    margin-bottom: 10px;
+    
+}
+
+.disease-Symptoms p {
+    color: #666;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.Expert-Saying{
+    padding: 20px;
+    /* background-color: #f5f5f5; */
+}
+
+.Expert-Saying h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.Expert-Saying p {
+    color: #666;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
